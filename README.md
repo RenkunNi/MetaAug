@@ -29,7 +29,7 @@ Conventional image classifiers are trained by randomly sampling mini-batches of 
 
     ```bash
     python train_aug.py --gpu 0 --save-path "./experiments/ResNet_R2D2_qcm_tlr" --train-shot 5 \
-    --head R2D2 --network ResNet --dataset CIFAR_FS --query_aug cutmix --s_p 1. --task_aug Rot90 --t_p 0.25
+    --head R2D2 --network ResNet --dataset CIFAR_FS --query_aug cutmix --q_p 1. --task_aug Rot90 --t_p 0.25
     ```
 
 3. To train Meta-MaxUp (4 samples) on 5-way CIFAR-FS:
