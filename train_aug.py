@@ -171,7 +171,7 @@ if __name__ == '__main__':
     parser.add_argument('--train-way', type=int, default=5,
                             help='number of classes in one training episode')
     parser.add_argument('--sample-way', type=int, default=5,
-                            help='number of classes in one training episode')
+                            help='number of classes sampled in one training episode (i.e. sample 10 classes for task mixup)')
     parser.add_argument('--test-way', type=int, default=5,
                             help='number of classes in one test (or validation) episode')
     parser.add_argument('--save-path', default='./experiments/exp_1')
@@ -185,7 +185,7 @@ if __name__ == '__main__':
     parser.add_argument('--episodes-per-batch', type=int, default=8,
                             help='number of episodes per batch')
     parser.add_argument('--num-per-batch', type=int, default=1000,
-                            help='number of episodes per batch')
+                            help='number of epoch size per train epoch')
     parser.add_argument('--eps', type=float, default=0.0,
                             help='epsilon of label smoothing')
 
